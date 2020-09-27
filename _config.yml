@@ -103,6 +103,6 @@ theme: apollo
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
-  type: github
+  type: git
   repo: git@github.com:tecmah/tecma-blog.github.io.git
   branch: gh-pages
