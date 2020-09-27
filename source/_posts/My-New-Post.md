@@ -7,7 +7,7 @@ tags: hexo github
 # HPとブログの作成
 爆速無料でgithubpageからドメイン変更してhttps対応でblog兼HPを立ち上げる
 
-#　要件
+# 要件
 ローカルでMarkdownで記事を書いて
 gitにpushしたら自動デプロイして記事がwebに上げる
 
@@ -18,7 +18,7 @@ gitにpushしたら自動デプロイして記事がwebに上げる
 ローカルのVSCodeで記事を書いて、そのまま上げられる状態でないと
 イライラして続く気がしない
 
-#　仕様
+# 仕様
 
 github pages 
 HEXO
