@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="jp">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 5.4.2">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"www.tecmah.com","root":"/","scheme":"Mist","version":"7.8.0","exturl":false,"sidebar":{"position":"right","display":"always","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp","menu_item":"fadeInDown"}}};
+  </script>
+
+  <meta name="description" content="TECMAHで行った技術と経営方法の全てを紹介します。">
+<meta property="og:type" content="website">
+<meta property="og:title" content="TECMAH">
+<meta property="og:url" content="http://www.tecmah.com/index.html">
+<meta property="og:site_name" content="TECMAH">
+<meta property="og:description" content="TECMAHで行った技術と経営方法の全てを紹介します。">
+<meta property="og:locale">
+<meta property="article:author" content="matyos">
+<meta property="article:tag" content="技術 git 経営 TECMAH Ruby 無料ブログ エンジニア IT">
+<meta name="twitter:card" content="summary">
+
+<link rel="canonical" href="http://www.tecmah.com/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : true,
+    isPost : false,
+    lang   : 'jp'
+  };
+</script>
+
+  <title>TECMAH</title>
+  
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="Toggle navigation bar">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">TECMAH</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+      <p class="site-subtitle" itemprop="description">TECMAH 技術ブログと経営</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fas fa-home fa-fw"></i>Home</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>Archives</a>
+
+  </li>
+        <li class="menu-item menu-item-about">
+
+    <a href="/about/me.md" rel="section"><i class="fas fa-user fa-fw"></i>About</a>
+
+  </li>
+        <li class="menu-item menu-item-sitemap">
+
+    <a href="/sitemap.xml" rel="section"><i class="fas fa-sitemap fa-fw"></i>Sitemap</a>
+
+  </li>
+  </ul>
+</nav>
+
+
+
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content index posts-expand">
+            
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="jp">
+    <link itemprop="mainEntityOfPage" href="http://www.tecmah.com/2023/06/25/25-First-Blog/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="matyos">
+      <meta itemprop="description" content="TECMAHで行った技術と経営方法の全てを紹介します。">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="TECMAH">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2023/06/25/25-First-Blog/" class="post-title-link" itemprop="url">First Blog</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+              
+
+              <time title="Created: 2023-06-25 21:51:21 / Modified: 22:00:20" itemprop="dateCreated datePublished" datetime="2023-06-25T21:51:21+09:00">2023-06-25</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h1 id="HPとブログの作成"><a href="#HPとブログの作成" class="headerlink" title="HPとブログの作成"></a>HPとブログの作成</h1><p>爆速無料でgithubpageからドメイン変更してhttps対応でblog兼HPを立ち上げる</p>
+<h1 id="要件"><a href="#要件" class="headerlink" title="要件"></a>要件</h1><p>ローカルでMarkdownで記事を書いて<br>gitにpushしたら自動デプロイして記事がwebに上げる</p>
+<p>というかlinuxとMacとWindowsと複数osを使用してるので<br>環境に依存するエディターは嫌で<br>かといってブラウザで記事を書くのはQiitaとかnoteで<br>やってたけど、もっといや<br>ローカルのVSCodeで記事を書いて、そのまま上げられる状態でないと<br>イライラして続く気がしない</p>
+<h1 id="仕様"><a href="#仕様" class="headerlink" title="仕様"></a>仕様</h1><p>github pages<br>HEXO<br>CloudFlare</p>
+<h1 id="oganaizationのgithubpageでrepozitoriを作成する"><a href="#oganaizationのgithubpageでrepozitoriを作成する" class="headerlink" title="oganaizationのgithubpageでrepozitoriを作成する"></a>oganaizationのgithubpageでrepozitoriを作成する</h1><h1 id="HEXOをローカルで立ち上げる"><a href="#HEXOをローカルで立ち上げる" class="headerlink" title="HEXOをローカルで立ち上げる"></a>HEXOをローカルで立ち上げる</h1><h1 id="ドメイン取得からhttpsの対応まで"><a href="#ドメイン取得からhttpsの対応まで" class="headerlink" title="ドメイン取得からhttpsの対応まで"></a>ドメイン取得からhttpsの対応まで</h1><h1 id="ドメインをgithubpageに当て込む"><a href="#ドメインをgithubpageに当て込む" class="headerlink" title="ドメインをgithubpageに当て込む"></a>ドメインをgithubpageに当て込む</h1><p>今後</p>
+<h1 id="github-actionsで自動デプロイ"><a href="#github-actionsで自動デプロイ" class="headerlink" title="github actionsで自動デプロイ"></a>github actionsで自動デプロイ</h1><p>参考<br><a target="_blank" rel="noopener" href="https://photo-tea.com/p/hexo-blog-theme-16/">https://photo-tea.com/p/hexo-blog-theme-16/</a><br><a target="_blank" rel="noopener" href="https://qiita.com/tktktktk/items/f80533b55bf0eaa34774">https://qiita.com/tktktktk/items/f80533b55bf0eaa34774</a><br><a target="_blank" rel="noopener" href="https://qiita.com/superbrothers/items/95e5723e9bd320094537">https://qiita.com/superbrothers/items/95e5723e9bd320094537</a><br><a target="_blank" rel="noopener" href="https://docs.github.com/en/free-pro-team@latest/github/working-with-github-pages">https://docs.github.com/en/free-pro-team@latest/github/working-with-github-pages</a></p>
+<p><a target="_blank" rel="noopener" href="https://j-xaas.github.io/Github-Pages-x-Hexo%E9%81%8B%E7%94%A8%E3%82%92Github-Actions%E3%81%A7%E8%87%AA%E5%8B%95%E5%8C%96/">https://j-xaas.github.io/Github-Pages-x-Hexo%E9%81%8B%E7%94%A8%E3%82%92Github-Actions%E3%81%A7%E8%87%AA%E5%8B%95%E5%8C%96/</a></p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="jp">
+    <link itemprop="mainEntityOfPage" href="http://www.tecmah.com/2023/06/25/25-Hexo-Next-config/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="matyos">
+      <meta itemprop="description" content="TECMAHで行った技術と経営方法の全てを紹介します。">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="TECMAH">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2023/06/25/25-Hexo-Next-config/" class="post-title-link" itemprop="url">Hexo-Next-config</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+              
+
+              <time title="Created: 2023-06-25 11:34:51 / Modified: 20:52:18" itemprop="dateCreated datePublished" datetime="2023-06-25T11:34:51+09:00">2023-06-25</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h1 id="Hexoのテーマ「NexT」の設定ファイル-config-ymlの説明"><a href="#Hexoのテーマ「NexT」の設定ファイル-config-ymlの説明" class="headerlink" title="Hexoのテーマ「NexT」の設定ファイル_config.ymlの説明"></a>Hexoのテーマ「NexT」の設定ファイル<code>_config.yml</code>の説明</h1><h1 id="HexoテーマNexT設定"><a href="#HexoテーマNexT設定" class="headerlink" title="HexoテーマNexT設定"></a>HexoテーマNexT設定</h1><h2 id="1-スキーム設定"><a href="#1-スキーム設定" class="headerlink" title="1. スキーム設定"></a>1. スキーム設定</h2><p>NexTには様々なスキームが用意されています。お好みのものを選びましょう。</p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">scheme:</span> <span class="string">Muse</span></span><br></pre></td></tr></table></figure>
+
+<p>Muse、Mist、Pisces、Geminiから選べます。</p>
+<h2 id="2-メニュー設定"><a href="#2-メニュー設定" class="headerlink" title="2. メニュー設定"></a>2. メニュー設定</h2><p>サイトのメニューアイテムをカスタマイズできます。</p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">menu:</span></span><br><span class="line">  <span class="attr">home:</span> <span class="string">/</span> <span class="string">||</span> <span class="string">fa</span> <span class="string">fa-home</span></span><br><span class="line">  <span class="attr">about:</span> <span class="string">/about/</span> <span class="string">||</span> <span class="string">fa</span> <span class="string">fa-user</span></span><br><span class="line">  <span class="attr">tags:</span> <span class="string">/tags/</span> <span class="string">||</span> <span class="string">fa</span> <span class="string">fa-tags</span></span><br><span class="line">  <span class="attr">categories:</span> <span class="string">/categories/</span> <span class="string">||</span> <span class="string">fa</span> <span class="string">fa-th</span></span><br><span class="line">  <span class="attr">archives:</span> <span class="string">/archives/</span> <span class="string">||</span> <span class="string">fa</span> <span class="string">fa-archive</span></span><br><span class="line">  <span class="attr">schedule:</span> <span class="string">/schedule/</span> <span class="string">||</span> <span class="string">fa</span> <span class="string">fa-calendar</span></span><br><span class="line">  <span class="attr">sitemap:</span> <span class="string">/sitemap.xml</span> <span class="string">||</span> <span class="string">fa</span> <span class="string">fa-sitemap</span></span><br><span class="line">  <span class="attr">commonweal:</span> <span class="string">/404/</span> <span class="string">||</span> <span class="string">fa</span> <span class="string">fa-heartbeat</span></span><br></pre></td></tr></table></figure>
+<p><code>menu</code>設定の下の各行はメニューアイテムを表しています。形式は<code>名前: URL || アイコン</code>です。</p>
+<h2 id="3-アバター設定"><a href="#3-アバター設定" class="headerlink" title="3. アバター設定"></a>3. アバター設定</h2><p>サイトにアバターを設定できます。</p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">avatar:</span></span><br><span class="line">  <span class="attr">url:</span> <span class="comment">#/images/avatar.gif</span></span><br><span class="line">  <span class="attr">rounded:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">opacity:</span> <span class="number">0.9</span></span><br></pre></td></tr></table></figure>
+<p><code>url</code>はアバター画像へのパスです。<code>rounded</code>はアバターを丸くするかどうかを決定します。<code>opacity</code>はアバターの不透明度を設定します。</p>
+<h2 id="4-ソーシャル設定"><a href="#4-ソーシャル設定" class="headerlink" title="4. ソーシャル設定"></a>4. ソーシャル設定</h2><p>ソーシャルメディアのプロフィールへのリンクを追加できます。</p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">social:</span></span><br><span class="line">  <span class="attr">GitHub:</span> <span class="string">https://github.com/yourusername</span> <span class="string">||</span> <span class="string">fa</span> <span class="string">fa-github</span></span><br><span class="line">  <span class="attr">Twitter:</span> <span class="string">https://twitter.com/yourusername</span> <span class="string">||</span> <span class="string">fa</span> <span class="string">fa-twitter</span></span><br><span class="line">  <span class="attr">Weibo:</span> <span class="string">https://weibo.com/yourusername</span> <span class="string">||</span> <span class="string">fa</span> <span class="string">fa-weibo</span></span><br></pre></td></tr></table></figure>
+<p><code>social</code>設定の下の各行はソーシャルメディアのリンクを表しています。形式は<code>プラットフォーム: URL || アイコン</code>です。</p>
+<h2 id="5-フッター設定"><a href="#5-フッター設定" class="headerlink" title="5. フッター設定"></a>5. フッター設定</h2><p>サイトのフッターをカスタマイズできます。</p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">footer:</span></span><br><span class="line">  <span class="attr">since:</span> <span class="number">2013</span></span><br><span class="line">  <span class="attr">post_meta:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">busuanzi:</span> <span class="literal">true</span></span><br></pre></td></tr></table></figure>
+<p><code>since</code>はサイトが作成された年です。<code>post_meta</code>はフッターに投稿のメタ情報を表示するかどうかを決定します。<code>busuanzi</code>はBusuanzi訪問者カウンターを有効にします。</p>
+<p>以上がNexTの設定ファイルの一部の説明です。</p>
+<p>全ての設定を理解するには、公式のドキュメン</p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="jp">
+    <link itemprop="mainEntityOfPage" href="http://www.tecmah.com/2020/09/28/28-My-New-Post/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="matyos">
+      <meta itemprop="description" content="TECMAHで行った技術と経営方法の全てを紹介します。">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="TECMAH">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2020/09/28/28-My-New-Post/" class="post-title-link" itemprop="url">My New Post</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+
+              <time title="Created: 2020-09-28 00:14:56" itemprop="dateCreated datePublished" datetime="2020-09-28T00:14:56+09:00">2020-09-28</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2023-06-25 22:09:02" itemprop="dateModified" datetime="2023-06-25T22:09:02+09:00">2023-06-25</time>
+              </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h1 id="HPとブログの作成"><a href="#HPとブログの作成" class="headerlink" title="HPとブログの作成"></a>HPとブログの作成</h1><p>爆速無料でgithubpageからドメイン変更してhttps対応でblog兼HPを立ち上げる</p>
+<h1 id="要件"><a href="#要件" class="headerlink" title="要件"></a>要件</h1><p>ローカルでMarkdownで記事を書いて<br>gitにpushしたら自動デプロイして記事がwebに上げる</p>
+<p>というかlinuxとMacとWindowsと複数osを使用してるので<br>環境に依存するエディターは嫌で<br>かといってブラウザで記事を書くのはQiitaとかnoteで<br>やってたけど、もっといや<br>ローカルのVSCodeで記事を書いて、そのまま上げられる状態でないと<br>イライラして続く気がしない</p>
+<h1 id="仕様"><a href="#仕様" class="headerlink" title="仕様"></a>仕様</h1><p>github pages<br>HEXO<br>CloudFlare</p>
+<h1 id="oganaizationのgithubpageでrepozitoriを作成する"><a href="#oganaizationのgithubpageでrepozitoriを作成する" class="headerlink" title="oganaizationのgithubpageでrepozitoriを作成する"></a>oganaizationのgithubpageでrepozitoriを作成する</h1><h1 id="HEXOをローカルで立ち上げる"><a href="#HEXOをローカルで立ち上げる" class="headerlink" title="HEXOをローカルで立ち上げる"></a>HEXOをローカルで立ち上げる</h1><h1 id="ドメイン取得からhttpsの対応まで"><a href="#ドメイン取得からhttpsの対応まで" class="headerlink" title="ドメイン取得からhttpsの対応まで"></a>ドメイン取得からhttpsの対応まで</h1><h1 id="ドメインをgithubpageに当て込む"><a href="#ドメインをgithubpageに当て込む" class="headerlink" title="ドメインをgithubpageに当て込む"></a>ドメインをgithubpageに当て込む</h1><p>今後</p>
+<h1 id="github-actionsで自動デプロイ"><a href="#github-actionsで自動デプロイ" class="headerlink" title="github actionsで自動デプロイ"></a>github actionsで自動デプロイ</h1><p>参考<br><a target="_blank" rel="noopener" href="https://photo-tea.com/p/hexo-blog-theme-16/">https://photo-tea.com/p/hexo-blog-theme-16/</a><br><a target="_blank" rel="noopener" href="https://qiita.com/tktktktk/items/f80533b55bf0eaa34774">https://qiita.com/tktktktk/items/f80533b55bf0eaa34774</a><br><a target="_blank" rel="noopener" href="https://qiita.com/superbrothers/items/95e5723e9bd320094537">https://qiita.com/superbrothers/items/95e5723e9bd320094537</a><br><a target="_blank" rel="noopener" href="https://docs.github.com/en/free-pro-team@latest/github/working-with-github-pages">https://docs.github.com/en/free-pro-team@latest/github/working-with-github-pages</a></p>
+<p><a target="_blank" rel="noopener" href="https://j-xaas.github.io/Github-Pages-x-Hexo%E9%81%8B%E7%94%A8%E3%82%92Github-Actions%E3%81%A7%E8%87%AA%E5%8B%95%E5%8C%96/">https://j-xaas.github.io/Github-Pages-x-Hexo%E9%81%8B%E7%94%A8%E3%82%92Github-Actions%E3%81%A7%E8%87%AA%E5%8B%95%E5%8C%96/</a></p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+
+  
+
+
+
+          </div>
+          
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          Table of Contents
+        </li>
+        <li class="sidebar-nav-overview">
+          Overview
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="matyos"
+      src="/images/avatar.gif">
+  <p class="site-author-name" itemprop="name">matyos</p>
+  <div class="site-description" itemprop="description">TECMAHで行った技術と経営方法の全てを紹介します。</div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">3</span>
+          <span class="site-state-item-name">posts</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-tags">
+        <span class="site-state-item-count">1</span>
+        <span class="site-state-item-name">tags</span>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author motion-element">
+      <span class="links-of-author-item">
+        <a href="https://github.com/maurayonori" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;maurayonori" rel="noopener" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://twitter.com/InfoTECMAH" title="Twitter → https:&#x2F;&#x2F;twitter.com&#x2F;InfoTECMAH" rel="noopener" target="_blank"><i class="fab fa-twitter fa-fw"></i>Twitter</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://www.youtube.com/@tecmah5751" title="YouTube → https:&#x2F;&#x2F;www.youtube.com&#x2F;@tecmah5751" rel="noopener" target="_blank"><i class="fab fa-youtube fa-fw"></i>YouTube</a>
+      </span>
+  </div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2023</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">TECMAH</span>
+</div>
+  <div class="powered-by">Powered by <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://mist.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Mist</a>
+  </div>
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/muse.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+</body>
+</html>
