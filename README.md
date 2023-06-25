@@ -23,6 +23,15 @@ hexo clean && hexo deploy --generate
 
 http://localhost:4000 で起動するか確認する
 
+
+# deploy
+_config.ymlで管理されている。
+
+
+```
+npm install hexo-deployer-git --save
+```
+
 # congfigに関して
 configはHexoとNextのものを編集することになります。
 
