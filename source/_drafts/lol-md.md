@@ -1,0 +1,5 @@
+---
+title: lol.md
+tags:
+---
+

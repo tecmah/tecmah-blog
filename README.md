@@ -1,35 +1,30 @@
 # tecma-blog
+https://tecmah.com
+# local start
 
+## git clone
+このプロジェクトをクローンしてください。
+## node install
+nodeはnvm推奨(権限エラー回避の為)
 
-## Quick Start
+```
+npm install hexo-cli -g
+npm install
 
-### Create a new post
-
-``` bash
-$ hexo new "My New Post"
 ```
 
-More info: [Writing](https://hexo.io/docs/writing.html)
+## 起動
 
-### Run server
-
-``` bash
-$ hexo server
 ```
-More info: [Server](https://hexo.io/docs/server.html)
+hexo s --debug
+hexo clean && hexo deploy --generate
 
-### Generate static files
-
-``` bash
-$ hexo generate
 ```
 
-More info: [Generating](https://hexo.io/docs/generating.html)
+http://localhost:4000 で起動するか確認する
 
-### Deploy to remote sites
+# congfigに関して
+configはHexoとNextのものを編集することになります。
 
-``` bash
-$ hexo deploy -g
-```
-
-More info: [Deployment](https://hexo.io/docs/one-command-deployment.html)
+#　設定image
+tecma-blog/node_modules/hexo-theme-next/source/images/avatar.gif
