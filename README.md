@@ -64,3 +64,6 @@ hexo new post "HexoでgoogleSerchConsoleの登録"
 hexo server
 
 
+# 記事の管理をmasterブランチに変更
+
+
