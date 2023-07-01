@@ -1,4 +1,5 @@
 # tecma-blog
+
 https://tecmah.com
 # local start
 
@@ -51,4 +52,15 @@ tecma-blog/node_modules/hexo-theme-next/source/images/avatar.gif
 hexo new [layout] <記事名>
 hexo new post "HexoでgoogleSerchConsoleの登録"
 ```
+=======
+
+
+## github pages
+
+
+
+# local start
+
+hexo server
+
 
