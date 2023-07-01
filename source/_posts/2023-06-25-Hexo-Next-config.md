@@ -5,16 +5,17 @@ tags:
 ---
 
 
-# もちろんです。以下に、Hexoのテーマ「NexT」の設定ファイル`_config.yml`の説明をマークダウン形式で日本語に翻訳して記述します。
+# Hexoのテーマ「NexT」の設定ファイル`_config.yml`の説明
 
-```markdown
 # HexoテーマNexT設定
 
 ## 1. スキーム設定
 NexTには様々なスキームが用意されています。お好みのものを選びましょう。
+
 ```yaml
 scheme: Muse
 ```
+
 Muse、Mist、Pisces、Geminiから選べます。
 
 ## 2. メニュー設定
