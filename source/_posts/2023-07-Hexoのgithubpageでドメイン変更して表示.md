@@ -150,7 +150,7 @@ DNSの設定をcloudflareで行ったらいけました。
 Your site was last deployed to the github-pages environment by the pages build and deployment workflow.
 Learn more about deploying to GitHub Pages using custom workflows
 
-A A
+
 
 
 以上が、HexoでGitHub Pagesにカスタムドメインを設定する手順です。
