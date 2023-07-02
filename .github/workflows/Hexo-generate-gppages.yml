@@ -12,7 +12,7 @@ jobs:
 
     strategy:
       matrix:
-        node-version: [14.x] # LTSが14.17.5だったので14を指定しておく
+        node-version: [18.x] # LTSが14.17.5だったので14を指定しておく
 
     steps:
     - uses: actions/checkout@v2
