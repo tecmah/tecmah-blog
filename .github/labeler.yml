@@ -1,14 +1,1 @@
-﻿web:
-- web/**/*
-api:
-- api/**/*
-batch:
-- batch/**/*
-infrastructure:
-- infrastructure/**/*
-cli:
-- cli/**/*
-themes:
-- themes/**/*
-post:
-- source/**/*
+﻿
