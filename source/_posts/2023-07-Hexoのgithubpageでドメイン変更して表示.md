@@ -151,8 +151,6 @@ Your site was last deployed to the github-pages environment by the pages build a
 Learn more about deploying to GitHub Pages using custom workflows
 
 
-AA
-
 
 以上が、HexoでGitHub Pagesにカスタムドメインを設定する手順です。
 ドメインプロバイダやDNS設定の詳細はプロバイダにより異なるため、
