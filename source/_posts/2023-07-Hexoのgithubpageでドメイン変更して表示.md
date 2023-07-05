@@ -150,7 +150,6 @@ DNSの設定をcloudflareで行ったらいけました。
 Your site was last deployed to the github-pages environment by the pages build and deployment workflow.
 Learn more about deploying to GitHub Pages using custom workflows
 
-
 # CNAMEの管理も場所がおかしい
 Hexoでは、ビルドの際にsources内の.md以外のファイルはそのままpublicディレクトリにコピーされるので
 これを利用して、GitHub Pagesでカスタムドメインを設定するときに必要なCNAMEファイルをsources直下に
@@ -182,6 +181,7 @@ hexo deploy -g
 ```
 
 https://qiita.com/simochee/items/58f04385713dd65f69f5
+
 
 
 以上が、HexoでGitHub Pagesにカスタムドメインを設定する手順です。
