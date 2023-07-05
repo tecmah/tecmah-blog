@@ -196,3 +196,5 @@ git stash
 git stash list
 git stash apply stash@{2}
 https://qiita.com/negi/items/291f5dc93750d3b15e0d
+
+git 一旦整理
