@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="jp">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 5.4.2">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+  <meta name="google-site-verification" content="true">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"www.tecmah.com","root":"/","scheme":"Mist","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
+  </script>
+
+  <meta name="description" content="HexoでGitHub Pagesにカスタムドメインを設定するHexoでGitHub Pagesにカスタムドメインを設定する手順になります。 1. ドメインを購入するまずはじめに、自分のウェブサイトに使用したいドメインを購入します。ドメインは、GoDaddy、Namecheap、Google Domainsなどのプロバイダから購入できます。自分が使っているのは日本のお名前.COMです。なんといって">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Hexoのgithubpageでドメイン変更して表示">
+<meta property="og:url" content="http://www.tecmah.com/Hexo%E3%81%AEgithubpage%E3%81%A7%E3%83%89%E3%83%A1%E3%82%A4%E3%83%B3%E5%A4%89%E6%9B%B4%E3%81%97%E3%81%A6%E8%A1%A8%E7%A4%BA/index.html">
+<meta property="og:site_name" content="TECMAH">
+<meta property="og:description" content="HexoでGitHub Pagesにカスタムドメインを設定するHexoでGitHub Pagesにカスタムドメインを設定する手順になります。 1. ドメインを購入するまずはじめに、自分のウェブサイトに使用したいドメインを購入します。ドメインは、GoDaddy、Namecheap、Google Domainsなどのプロバイダから購入できます。自分が使っているのは日本のお名前.COMです。なんといって">
+<meta property="og:locale">
+<meta property="og:image" content="http://www.tecmah.com/image-4.png">
+<meta property="og:image" content="http://www.tecmah.com/image-5.png">
+<meta property="og:image" content="http://www.tecmah.com/image-6.png">
+<meta property="og:image" content="http://www.tecmah.com/image-7.png">
+<meta property="og:image" content="http://www.tecmah.com/image-8.png">
+<meta property="og:image" content="http://www.tecmah.com/image-9.png">
+<meta property="og:image" content="http://www.tecmah.com/image-10.png">
+<meta property="og:image" content="http://www.tecmah.com/image-12.png">
+<meta property="og:image" content="http://www.tecmah.com/image-11.png">
+<meta property="og:image" content="http://www.tecmah.com/image-13.png">
+<meta property="article:published_time" content="2023-07-02T01:50:42.000Z">
+<meta property="article:modified_time" content="2023-07-05T22:36:38.506Z">
+<meta property="article:author" content="matyos">
+<meta property="article:tag" content="Hexo githubpage ドメイン変更">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://www.tecmah.com/image-4.png">
+
+<link rel="canonical" href="http://www.tecmah.com/Hexo%E3%81%AEgithubpage%E3%81%A7%E3%83%89%E3%83%A1%E3%82%A4%E3%83%B3%E5%A4%89%E6%9B%B4%E3%81%97%E3%81%A6%E8%A1%A8%E7%A4%BA/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'jp'
+  };
+</script>
+
+  <title>Hexoのgithubpageでドメイン変更して表示 | TECMAH</title>
+  
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="Toggle navigation bar">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">TECMAH</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+      <p class="site-subtitle" itemprop="description">TECMAH 技術ブログと経営</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="home fa-fw"></i>Home</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="archive fa-fw"></i>Archives</a>
+
+  </li>
+  </ul>
+</nav>
+
+
+
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content post posts-expand">
+            
+
+    
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="jp">
+    <link itemprop="mainEntityOfPage" href="http://www.tecmah.com/Hexo%E3%81%AEgithubpage%E3%81%A7%E3%83%89%E3%83%A1%E3%82%A4%E3%83%B3%E5%A4%89%E6%9B%B4%E3%81%97%E3%81%A6%E8%A1%A8%E7%A4%BA/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="matyos">
+      <meta itemprop="description" content="TECMAHで行った技術と経営方法の全てを紹介します。">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="TECMAH">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          Hexoのgithubpageでドメイン変更して表示
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+
+              <time title="Created: 2023-07-02 10:50:42" itemprop="dateCreated datePublished" datetime="2023-07-02T10:50:42+09:00">2023-07-02</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2023-07-06 07:36:38" itemprop="dateModified" datetime="2023-07-06T07:36:38+09:00">2023-07-06</time>
+              </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <h1 id="HexoでGitHub-Pagesにカスタムドメインを設定する"><a href="#HexoでGitHub-Pagesにカスタムドメインを設定する" class="headerlink" title="HexoでGitHub Pagesにカスタムドメインを設定する"></a>HexoでGitHub Pagesにカスタムドメインを設定する</h1><p>HexoでGitHub Pagesにカスタムドメインを設定する手順になります。</p>
+<h2 id="1-ドメインを購入する"><a href="#1-ドメインを購入する" class="headerlink" title="1. ドメインを購入する"></a>1. ドメインを購入する</h2><p>まずはじめに、自分のウェブサイトに使用したいドメインを購入します。<br>ドメインは、GoDaddy、Namecheap、Google Domainsなどのプロバイダから購入できます。<br>自分が使っているのは日本のお名前.COMです。<br>なんといっても他のプロバイダより休めに購入できます。</p>
+<h2 id="2-DNS設定を行う"><a href="#2-DNS設定を行う" class="headerlink" title="2. DNS設定を行う"></a>2. DNS設定を行う</h2><p>ドメインを購入したら、ドメインのDNS設定を行います。DNS設定はドメインプロバイダの管理画面から行うことができます。</p>
+<p>GitHub Pagesを使用している場合、以下のように設定します。</p>
+<ul>
+<li>Aレコード：185.199.108.153</li>
+<li>Aレコード：185.199.109.153</li>
+<li>Aレコード：185.199.110.153</li>
+<li>Aレコード：185.199.111.153</li>
+</ul>
+<h2 id="3-リポジトリにCNAMEファイルを追加する"><a href="#3-リポジトリにCNAMEファイルを追加する" class="headerlink" title="3. リポジトリにCNAMEファイルを追加する"></a>3. リポジトリにCNAMEファイルを追加する</h2><p>次に、GitHubのリポジトリにCNAMEという名前のファイルを作成します。このファイルの中には、設定したいドメイン名を記述します。</p>
+<p>例えば、<code>example.com</code>というドメインを設定したい場合、CNAMEファイルの中身は以下のようになります。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">example.com</span><br></pre></td></tr></table></figure>
+
+<p>このCNAMEファイルをリポジトリのルートディレクトリに追加します。</p>
+<h2 id="4-Hexoの設定を変更する"><a href="#4-Hexoの設定を変更する" class="headerlink" title="4. Hexoの設定を変更する"></a>4. Hexoの設定を変更する</h2><p>最後に、Hexoの設定ファイル<code>_config.yml</code>を開き、<code>url</code>の部分を新しいドメインに変更します。</p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># URL</span></span><br><span class="line"><span class="comment">## If your site is put in a subdirectory, set url as &#x27;http://yoursite.com/child&#x27; and root as &#x27;/child/&#x27;</span></span><br><span class="line"><span class="attr">url:</span> <span class="string">http://example.com</span></span><br><span class="line"><span class="attr">root:</span> <span class="string">/</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="5-変更をデプロイする"><a href="#5-変更をデプロイする" class="headerlink" title="5. 変更をデプロイする"></a>5. 変更をデプロイする</h2><p>以上の変更を行ったら、最後にHexoを使ってサイトを再生成し、変更をデプロイします。</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ hexo clean</span><br><span class="line">$ hexo generate</span><br><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+
+<p>これで、新しいドメインでHexoのウェブサイトが表示されるようになります。<br>なるはずです。</p>
+<h1 id="４０４エラーが出る"><a href="#４０４エラーが出る" class="headerlink" title="４０４エラーが出る"></a>４０４エラーが出る</h1><p>** 全然ダメじゃねぇか！！！！！！！！！<br><img src="/image-4.png" alt="Alt text"></p>
+<h2 id="エラーの原因を調べる"><a href="#エラーの原因を調べる" class="headerlink" title="エラーの原因を調べる"></a>エラーの原因を調べる</h2><p>そもそもCostomDomainの設定でDNSをチェックしてほしいと表示されている。</p>
+<p><img src="/image-5.png" alt="Alt text"><br>DNS Check in Progressは何を指しているのか<br>考えられる原因は以下のどれかかも</p>
+<ul>
+<li>AレコードやCNAMEレコードが正しく設定されていない。</li>
+<li>DNSの変更がまだ完全にプロパゲート（伝播）されていない。</li>
+<li>ドメインが他のサービスにもマッピングされていて、競合が発生している。</li>
+</ul>
+<p> AレコードやCNAMEレコードが正しく設定されていないのかもしれない、<br>初期でこのページ作ったけどもう三年も前だしな・・・・</p>
+<h1 id="GithubのOrganaizationでカスタムドメインが設定できるようになっている。"><a href="#GithubのOrganaizationでカスタムドメインが設定できるようになっている。" class="headerlink" title="GithubのOrganaizationでカスタムドメインが設定できるようになっている。"></a>GithubのOrganaizationでカスタムドメインが設定できるようになっている。</h1><p><a target="_blank" rel="noopener" href="https://docs.github.com/ja/pages/configuring-a-custom-domain-for-your-github-pages-site/verifying-your-custom-domain-for-github-pages">Organizationのサイトのドメインの検証</a></p>
+<p>Organizationのオーナーは、自分のOrganizatinのカスタムドメインを検証できます。<br>GitHub.com の右上隅にあるプロファイル写真をクリックし、 [自分の Organization] をクリックします。<br>組織の隣の [設定] をクリックします。<br>サイドバーの [コード、計画、自動化] セクションで、 [ Pages] をクリックしてください。<br>右側の [ドメインの追加] をクリックします。<br>[追加するドメイン] で、確認するドメインを入力し、 [ドメインの追加] を選びます。<br>[DNS TXT レコードを追加する] の手順に従って、ドメイン ホスティング サービスで TXT レコードを作成します。<br>DNS 構成が変わるまで待ちます。 即時または最大 24 時間かかる場合があります。<br>DNS 構成が更新されたことを確認したら、ドメインを確認できます。<br>自分のドメインを確認するには、 [確認] をクリックします。</p>
+<h2 id="OrganizationのVerified-domainsの設定を行う"><a href="#OrganizationのVerified-domainsの設定を行う" class="headerlink" title="OrganizationのVerified domainsの設定を行う"></a>OrganizationのVerified domainsの設定を行う</h2><p>現状ではVerified domains無い<br><img src="/image-6.png" alt="Alt text"></p>
+<p>設定を開始してAdd dmainを行う。<br><img src="/image-7.png" alt="Alt text"></p>
+<p><img src="/image-8.png" alt="Alt text"></p>
+<h1 id="お名前-comでDNS設定の追加"><a href="#お名前-comでDNS設定の追加" class="headerlink" title="お名前.comでDNS設定の追加"></a>お名前.comでDNS設定の追加</h1><p>お名前.comのDNSの設定に追加、これでDNSの変更はいいはず？</p>
+<p><img src="/image-9.png" alt="Alt text"></p>
+<h1 id="githubに戻ってVarify"><a href="#githubに戻ってVarify" class="headerlink" title="githubに戻ってVarify"></a>githubに戻ってVarify</h1><p>設定を追加して変更・・・・したが２４時間変更にかかる場合があるとのこと<br>こればっかりは待つしかない。<br><img src="/image-10.png" alt="Alt text"></p>
+<h2 id="雲行きが怪しいのでClaudFlareを見にいく"><a href="#雲行きが怪しいのでClaudFlareを見にいく" class="headerlink" title="雲行きが怪しいのでClaudFlareを見にいく"></a>雲行きが怪しいのでClaudFlareを見にいく</h2><p>いくら待っても全然通らない、流石におかしいぞ・・・・<br><a target="_blank" rel="noopener" href="https://www.cloudflare.com/">cloudflare</a><br>で以前設定を行なっていたか、確認。</p>
+<ul>
+<li>なんかありますねぇ！!!!!!!!<br><img src="/image-12.png" alt="Alt text"></li>
+</ul>
+<p>DNSの設定をcloudflareで行ったらいけました。</p>
+<p><img src="/image-11.png" alt="Alt text"></p>
+<h1 id="HTTPSの問題が出る"><a href="#HTTPSの問題が出る" class="headerlink" title="HTTPSの問題が出る"></a>HTTPSの問題が出る</h1><p><img src="/image-13.png" alt="Alt text"></p>
+<h1 id="デプロイの問題も出ている。"><a href="#デプロイの問題も出ている。" class="headerlink" title="デプロイの問題も出ている。"></a>デプロイの問題も出ている。</h1><p>Your site was last deployed to the github-pages environment by the pages build and deployment workflow.<br>Learn more about deploying to GitHub Pages using custom workflows</p>
+<h1 id="CNAMEの管理も場所がおかしい"><a href="#CNAMEの管理も場所がおかしい" class="headerlink" title="CNAMEの管理も場所がおかしい"></a>CNAMEの管理も場所がおかしい</h1><p>Hexoでは、ビルドの際にsources内の.md以外のファイルはそのままpublicディレクトリにコピーされるので<br>これを利用して、GitHub Pagesでカスタムドメインを設定するときに必要なCNAMEファイルをsources直下に<br>追加しなければなりません。</p>
+<h1 id="小文字大文字"><a href="#小文字大文字" class="headerlink" title="小文字大文字"></a>小文字大文字</h1><p>404エラーはGitがデフォルトでは大文字・小文字を区別しないことに起因していました。<br><a target="_blank" rel="noopener" href="https://sishida21.github.io/2020/06/01/solve-page-404-error-in-hexo/">https://sishida21.github.io/2020/06/01/solve-page-404-error-in-hexo/</a></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">404</span><br><span class="line">ファイルが見つかりません</span><br><span class="line">このアドレスに設定されているサイトには、要求されたファイルが含まれていません。</span><br><span class="line">これが自分のサイトの場合は、ファイル名の大文字と小文字が URL およびファイルのアクセス許可と一致していることを確認してください。</span><br><span class="line">ルート URL ( などhttp://example.com/) の場合は、index.htmlファイルを指定する必要があります。</span><br><span class="line">GitHub Pages の使用方法の詳細については、完全なドキュメントをお読みください。</span><br></pre></td></tr></table></figure>
+
+
+
+<p>対応コマンド</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">cd .deploy_git </span><br><span class="line">git rm -rf *</span><br><span class="line">hexo deploy -g</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p><a target="_blank" rel="noopener" href="https://qiita.com/simochee/items/58f04385713dd65f69f5">https://qiita.com/simochee/items/58f04385713dd65f69f5</a></p>
+<p>以上が、HexoでGitHub Pagesにカスタムドメインを設定する手順です。<br>ドメインプロバイダやDNS設定の詳細はプロバイダにより異なるため、<br>具体的な操作はプロバイダのドキュメンテーションやヘルプを参照してください。</p>
+<h1 id="git-stashに関しての記事"><a href="#git-stashに関しての記事" class="headerlink" title="git stashに関しての記事"></a>git stashに関しての記事</h1><p>git stash<br>git stash list<br>git stash apply stash@{2}<br><a target="_blank" rel="noopener" href="https://qiita.com/negi/items/291f5dc93750d3b15e0d">https://qiita.com/negi/items/291f5dc93750d3b15e0d</a></p>
+<p>git 一旦整理</p>
+
+    </div>
+
+    
+    
+    
+
+      <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/Hexo-githubpage-%E3%83%89%E3%83%A1%E3%82%A4%E3%83%B3%E5%A4%89%E6%9B%B4/" rel="tag"># Hexo githubpage ドメイン変更</a>
+          </div>
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/Git%E3%82%B3%E3%83%9E%E3%83%B3%E3%83%89%E3%83%81%E3%83%BC%E3%83%88%E3%82%B7%E3%83%BC%E3%83%88/" rel="prev" title="Gitコマンドチートシート">
+      <i class="fa fa-chevron-left"></i> Gitコマンドチートシート
+    </a></div>
+      <div class="post-nav-item"></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+
+
+          </div>
+          
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          Table of Contents
+        </li>
+        <li class="sidebar-nav-overview">
+          Overview
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Hexo%E3%81%A7GitHub-Pages%E3%81%AB%E3%82%AB%E3%82%B9%E3%82%BF%E3%83%A0%E3%83%89%E3%83%A1%E3%82%A4%E3%83%B3%E3%82%92%E8%A8%AD%E5%AE%9A%E3%81%99%E3%82%8B"><span class="nav-number">1.</span> <span class="nav-text">HexoでGitHub Pagesにカスタムドメインを設定する</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-%E3%83%89%E3%83%A1%E3%82%A4%E3%83%B3%E3%82%92%E8%B3%BC%E5%85%A5%E3%81%99%E3%82%8B"><span class="nav-number">1.1.</span> <span class="nav-text">1. ドメインを購入する</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-DNS%E8%A8%AD%E5%AE%9A%E3%82%92%E8%A1%8C%E3%81%86"><span class="nav-number">1.2.</span> <span class="nav-text">2. DNS設定を行う</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-%E3%83%AA%E3%83%9D%E3%82%B8%E3%83%88%E3%83%AA%E3%81%ABCNAME%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E3%82%92%E8%BF%BD%E5%8A%A0%E3%81%99%E3%82%8B"><span class="nav-number">1.3.</span> <span class="nav-text">3. リポジトリにCNAMEファイルを追加する</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-Hexo%E3%81%AE%E8%A8%AD%E5%AE%9A%E3%82%92%E5%A4%89%E6%9B%B4%E3%81%99%E3%82%8B"><span class="nav-number">1.4.</span> <span class="nav-text">4. Hexoの設定を変更する</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#5-%E5%A4%89%E6%9B%B4%E3%82%92%E3%83%87%E3%83%97%E3%83%AD%E3%82%A4%E3%81%99%E3%82%8B"><span class="nav-number">1.5.</span> <span class="nav-text">5. 変更をデプロイする</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%EF%BC%94%EF%BC%90%EF%BC%94%E3%82%A8%E3%83%A9%E3%83%BC%E3%81%8C%E5%87%BA%E3%82%8B"><span class="nav-number">2.</span> <span class="nav-text">４０４エラーが出る</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E3%82%A8%E3%83%A9%E3%83%BC%E3%81%AE%E5%8E%9F%E5%9B%A0%E3%82%92%E8%AA%BF%E3%81%B9%E3%82%8B"><span class="nav-number">2.1.</span> <span class="nav-text">エラーの原因を調べる</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Github%E3%81%AEOrganaization%E3%81%A7%E3%82%AB%E3%82%B9%E3%82%BF%E3%83%A0%E3%83%89%E3%83%A1%E3%82%A4%E3%83%B3%E3%81%8C%E8%A8%AD%E5%AE%9A%E3%81%A7%E3%81%8D%E3%82%8B%E3%82%88%E3%81%86%E3%81%AB%E3%81%AA%E3%81%A3%E3%81%A6%E3%81%84%E3%82%8B%E3%80%82"><span class="nav-number">3.</span> <span class="nav-text">GithubのOrganaizationでカスタムドメインが設定できるようになっている。</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Organization%E3%81%AEVerified-domains%E3%81%AE%E8%A8%AD%E5%AE%9A%E3%82%92%E8%A1%8C%E3%81%86"><span class="nav-number">3.1.</span> <span class="nav-text">OrganizationのVerified domainsの設定を行う</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E3%81%8A%E5%90%8D%E5%89%8D-com%E3%81%A7DNS%E8%A8%AD%E5%AE%9A%E3%81%AE%E8%BF%BD%E5%8A%A0"><span class="nav-number">4.</span> <span class="nav-text">お名前.comでDNS設定の追加</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#github%E3%81%AB%E6%88%BB%E3%81%A3%E3%81%A6Varify"><span class="nav-number">5.</span> <span class="nav-text">githubに戻ってVarify</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%9B%B2%E8%A1%8C%E3%81%8D%E3%81%8C%E6%80%AA%E3%81%97%E3%81%84%E3%81%AE%E3%81%A7ClaudFlare%E3%82%92%E8%A6%8B%E3%81%AB%E3%81%84%E3%81%8F"><span class="nav-number">5.1.</span> <span class="nav-text">雲行きが怪しいのでClaudFlareを見にいく</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#HTTPS%E3%81%AE%E5%95%8F%E9%A1%8C%E3%81%8C%E5%87%BA%E3%82%8B"><span class="nav-number">6.</span> <span class="nav-text">HTTPSの問題が出る</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E3%83%87%E3%83%97%E3%83%AD%E3%82%A4%E3%81%AE%E5%95%8F%E9%A1%8C%E3%82%82%E5%87%BA%E3%81%A6%E3%81%84%E3%82%8B%E3%80%82"><span class="nav-number">7.</span> <span class="nav-text">デプロイの問題も出ている。</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#CNAME%E3%81%AE%E7%AE%A1%E7%90%86%E3%82%82%E5%A0%B4%E6%89%80%E3%81%8C%E3%81%8A%E3%81%8B%E3%81%97%E3%81%84"><span class="nav-number">8.</span> <span class="nav-text">CNAMEの管理も場所がおかしい</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%B0%8F%E6%96%87%E5%AD%97%E5%A4%A7%E6%96%87%E5%AD%97"><span class="nav-number">9.</span> <span class="nav-text">小文字大文字</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#git-stash%E3%81%AB%E9%96%A2%E3%81%97%E3%81%A6%E3%81%AE%E8%A8%98%E4%BA%8B"><span class="nav-number">10.</span> <span class="nav-text">git stashに関しての記事</span></a></li></ol></div>
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">matyos</p>
+  <div class="site-description" itemprop="description">TECMAHで行った技術と経営方法の全てを紹介します。</div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">7</span>
+          <span class="site-state-item-name">posts</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-tags">
+        <span class="site-state-item-count">3</span>
+        <span class="site-state-item-name">tags</span>
+      </div>
+  </nav>
+</div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2023</span>
+  <span class="with-love">
+    <i class="user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">matyos</span>
+</div>
+  <div class="powered-by">Powered by <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://mist.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Mist</a>
+  </div>
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/muse.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+</body>
+</html>
