@@ -150,9 +150,51 @@ DNSの設定をcloudflareで行ったらいけました。
 Your site was last deployed to the github-pages environment by the pages build and deployment workflow.
 Learn more about deploying to GitHub Pages using custom workflows
 
+# CNAMEの管理も場所がおかしい
+Hexoでは、ビルドの際にsources内の.md以外のファイルはそのままpublicディレクトリにコピーされるので
+これを利用して、GitHub Pagesでカスタムドメインを設定するときに必要なCNAMEファイルをsources直下に
+追加しなければなりません。
+
+
+# 小文字大文字
+
+404エラーはGitがデフォルトでは大文字・小文字を区別しないことに起因していました。
+https://sishida21.github.io/2020/06/01/solve-page-404-error-in-hexo/
+
+```
+404
+ファイルが見つかりません
+このアドレスに設定されているサイトには、要求されたファイルが含まれていません。
+これが自分のサイトの場合は、ファイル名の大文字と小文字が URL およびファイルのアクセス許可と一致していることを確認してください。
+ルート URL ( などhttp://example.com/) の場合は、index.htmlファイルを指定する必要があります。
+GitHub Pages の使用方法の詳細については、完全なドキュメントをお読みください。
+```
+
+
+
+対応コマンド
+```
+cd .deploy_git 
+git rm -rf *
+hexo deploy -g
+
+```
+
+https://qiita.com/simochee/items/58f04385713dd65f69f5
+
 
 
 以上が、HexoでGitHub Pagesにカスタムドメインを設定する手順です。
 ドメインプロバイダやDNS設定の詳細はプロバイダにより異なるため、
 具体的な操作はプロバイダのドキュメンテーションやヘルプを参照してください。
 
+
+
+
+# git stashに関しての記事
+git stash 
+git stash list
+git stash apply stash@{2}
+https://qiita.com/negi/items/291f5dc93750d3b15e0d
+
+git 一旦整理
