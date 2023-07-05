@@ -14,7 +14,7 @@
 <link rel="stylesheet" href="/css/main.css">
 
 
-<link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css">
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
 
 <script id="hexo-configurations">
     var NexT = window.NexT || {};
@@ -39,7 +39,7 @@
 <meta property="og:image" content="http://www.tecmah.com/image-11.png">
 <meta property="og:image" content="http://www.tecmah.com/image-13.png">
 <meta property="article:published_time" content="2023-07-02T01:50:42.000Z">
-<meta property="article:modified_time" content="2023-07-02T12:52:00.023Z">
+<meta property="article:modified_time" content="2023-07-05T00:33:03.935Z">
 <meta property="article:author" content="matyos">
 <meta property="article:tag" content="Hexo githubpage ドメイン変更">
 <meta name="twitter:card" content="summary">
@@ -125,15 +125,15 @@
 
 
 <nav class="site-nav">
-  <ul id="menu" class="menu">
+  <ul id="menu" class="main-menu menu">
         <li class="menu-item menu-item-home">
 
-    <a href="/" rel="section"><i class="fa fa-fw fa-home"></i>Home</a>
+    <a href="/" rel="section"><i class="home fa-fw"></i>Home</a>
 
   </li>
         <li class="menu-item menu-item-archives">
 
-    <a href="/archives/" rel="section"><i class="fa fa-fw fa-archive"></i>Archives</a>
+    <a href="/archives/" rel="section"><i class="archive fa-fw"></i>Archives</a>
 
   </li>
   </ul>
@@ -183,13 +183,19 @@
         <div class="post-meta">
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
+                <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">Posted on</span>
-              
 
-              <time title="Created: 2023-07-02 10:50:42 / Modified: 21:52:00" itemprop="dateCreated datePublished" datetime="2023-07-02T10:50:42+09:00">2023-07-02</time>
+              <time title="Created: 2023-07-02 10:50:42" itemprop="dateCreated datePublished" datetime="2023-07-02T10:50:42+09:00">2023-07-02</time>
             </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2023-07-05 09:33:03" itemprop="dateModified" datetime="2023-07-05T09:33:03+09:00">2023-07-05</time>
+              </span>
 
           
 
@@ -249,6 +255,8 @@
 <p><img src="/image-11.png" alt="Alt text"></p>
 <h1 id="HTTPSの問題が出る"><a href="#HTTPSの問題が出る" class="headerlink" title="HTTPSの問題が出る"></a>HTTPSの問題が出る</h1><p><img src="/image-13.png" alt="Alt text"></p>
 <h1 id="デプロイの問題も出ている。"><a href="#デプロイの問題も出ている。" class="headerlink" title="デプロイの問題も出ている。"></a>デプロイの問題も出ている。</h1><p>Your site was last deployed to the github-pages environment by the pages build and deployment workflow.<br>Learn more about deploying to GitHub Pages using custom workflows</p>
+<h1 id="CNAMEの管理も場所がおかしい"><a href="#CNAMEの管理も場所がおかしい" class="headerlink" title="CNAMEの管理も場所がおかしい"></a>CNAMEの管理も場所がおかしい</h1><p>Hexoでは、ビルドの際にsources内の.md以外のファイルはそのままpublicディレクトリにコピーされるので<br>これを利用して、GitHub Pagesでカスタムドメインを設定するときに必要なCNAMEファイルをsources直下に<br>追加しなければなりません。</p>
+<p><a target="_blank" rel="noopener" href="https://qiita.com/simochee/items/58f04385713dd65f69f5">https://qiita.com/simochee/items/58f04385713dd65f69f5</a></p>
 <p>以上が、HexoでGitHub Pagesにカスタムドメインを設定する手順です。<br>ドメインプロバイダやDNS設定の詳細はプロバイダにより異なるため、<br>具体的な操作はプロバイダのドキュメンテーションやヘルプを参照してください。</p>
 
     </div>
@@ -271,7 +279,10 @@
     <a href="/Git%E3%82%B3%E3%83%9E%E3%83%B3%E3%83%89%E3%83%81%E3%83%BC%E3%83%88%E3%82%B7%E3%83%BC%E3%83%88/" rel="prev" title="Gitコマンドチートシート">
       <i class="fa fa-chevron-left"></i> Gitコマンドチートシート
     </a></div>
-      <div class="post-nav-item"></div>
+      <div class="post-nav-item">
+    <a href="/SSH%E7%A7%98%E5%AF%86%E9%8D%B5%E3%81%AE%E7%AE%A1%E7%90%86%E3%82%92%E6%A5%BD%E3%81%AB%E3%81%97%E3%81%9F%E3%81%84/" rel="next" title="SSH秘密鍵の管理を楽にしたい">
+      SSH秘密鍵の管理を楽にしたい <i class="fa fa-chevron-right"></i>
+    </a></div>
     </div>
       </footer>
     
@@ -330,7 +341,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Hexo%E3%81%A7GitHub-Pages%E3%81%AB%E3%82%AB%E3%82%B9%E3%82%BF%E3%83%A0%E3%83%89%E3%83%A1%E3%82%A4%E3%83%B3%E3%82%92%E8%A8%AD%E5%AE%9A%E3%81%99%E3%82%8B"><span class="nav-number">1.</span> <span class="nav-text">HexoでGitHub Pagesにカスタムドメインを設定する</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-%E3%83%89%E3%83%A1%E3%82%A4%E3%83%B3%E3%82%92%E8%B3%BC%E5%85%A5%E3%81%99%E3%82%8B"><span class="nav-number">1.1.</span> <span class="nav-text">1. ドメインを購入する</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-DNS%E8%A8%AD%E5%AE%9A%E3%82%92%E8%A1%8C%E3%81%86"><span class="nav-number">1.2.</span> <span class="nav-text">2. DNS設定を行う</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-%E3%83%AA%E3%83%9D%E3%82%B8%E3%83%88%E3%83%AA%E3%81%ABCNAME%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E3%82%92%E8%BF%BD%E5%8A%A0%E3%81%99%E3%82%8B"><span class="nav-number">1.3.</span> <span class="nav-text">3. リポジトリにCNAMEファイルを追加する</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-Hexo%E3%81%AE%E8%A8%AD%E5%AE%9A%E3%82%92%E5%A4%89%E6%9B%B4%E3%81%99%E3%82%8B"><span class="nav-number">1.4.</span> <span class="nav-text">4. Hexoの設定を変更する</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#5-%E5%A4%89%E6%9B%B4%E3%82%92%E3%83%87%E3%83%97%E3%83%AD%E3%82%A4%E3%81%99%E3%82%8B"><span class="nav-number">1.5.</span> <span class="nav-text">5. 変更をデプロイする</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%EF%BC%94%EF%BC%90%EF%BC%94%E3%82%A8%E3%83%A9%E3%83%BC%E3%81%8C%E5%87%BA%E3%82%8B"><span class="nav-number">2.</span> <span class="nav-text">４０４エラーが出る</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E3%82%A8%E3%83%A9%E3%83%BC%E3%81%AE%E5%8E%9F%E5%9B%A0%E3%82%92%E8%AA%BF%E3%81%B9%E3%82%8B"><span class="nav-number">2.1.</span> <span class="nav-text">エラーの原因を調べる</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Github%E3%81%AEOrganaization%E3%81%A7%E3%82%AB%E3%82%B9%E3%82%BF%E3%83%A0%E3%83%89%E3%83%A1%E3%82%A4%E3%83%B3%E3%81%8C%E8%A8%AD%E5%AE%9A%E3%81%A7%E3%81%8D%E3%82%8B%E3%82%88%E3%81%86%E3%81%AB%E3%81%AA%E3%81%A3%E3%81%A6%E3%81%84%E3%82%8B%E3%80%82"><span class="nav-number">3.</span> <span class="nav-text">GithubのOrganaizationでカスタムドメインが設定できるようになっている。</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Organization%E3%81%AEVerified-domains%E3%81%AE%E8%A8%AD%E5%AE%9A%E3%82%92%E8%A1%8C%E3%81%86"><span class="nav-number">3.1.</span> <span class="nav-text">OrganizationのVerified domainsの設定を行う</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E3%81%8A%E5%90%8D%E5%89%8D-com%E3%81%A7DNS%E8%A8%AD%E5%AE%9A%E3%81%AE%E8%BF%BD%E5%8A%A0"><span class="nav-number">4.</span> <span class="nav-text">お名前.comでDNS設定の追加</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#github%E3%81%AB%E6%88%BB%E3%81%A3%E3%81%A6Varify"><span class="nav-number">5.</span> <span class="nav-text">githubに戻ってVarify</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%9B%B2%E8%A1%8C%E3%81%8D%E3%81%8C%E6%80%AA%E3%81%97%E3%81%84%E3%81%AE%E3%81%A7ClaudFlare%E3%82%92%E8%A6%8B%E3%81%AB%E3%81%84%E3%81%8F"><span class="nav-number">5.1.</span> <span class="nav-text">雲行きが怪しいのでClaudFlareを見にいく</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#HTTPS%E3%81%AE%E5%95%8F%E9%A1%8C%E3%81%8C%E5%87%BA%E3%82%8B"><span class="nav-number">6.</span> <span class="nav-text">HTTPSの問題が出る</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E3%83%87%E3%83%97%E3%83%AD%E3%82%A4%E3%81%AE%E5%95%8F%E9%A1%8C%E3%82%82%E5%87%BA%E3%81%A6%E3%81%84%E3%82%8B%E3%80%82"><span class="nav-number">7.</span> <span class="nav-text">デプロイの問題も出ている。</span></a></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Hexo%E3%81%A7GitHub-Pages%E3%81%AB%E3%82%AB%E3%82%B9%E3%82%BF%E3%83%A0%E3%83%89%E3%83%A1%E3%82%A4%E3%83%B3%E3%82%92%E8%A8%AD%E5%AE%9A%E3%81%99%E3%82%8B"><span class="nav-number">1.</span> <span class="nav-text">HexoでGitHub Pagesにカスタムドメインを設定する</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-%E3%83%89%E3%83%A1%E3%82%A4%E3%83%B3%E3%82%92%E8%B3%BC%E5%85%A5%E3%81%99%E3%82%8B"><span class="nav-number">1.1.</span> <span class="nav-text">1. ドメインを購入する</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-DNS%E8%A8%AD%E5%AE%9A%E3%82%92%E8%A1%8C%E3%81%86"><span class="nav-number">1.2.</span> <span class="nav-text">2. DNS設定を行う</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-%E3%83%AA%E3%83%9D%E3%82%B8%E3%83%88%E3%83%AA%E3%81%ABCNAME%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E3%82%92%E8%BF%BD%E5%8A%A0%E3%81%99%E3%82%8B"><span class="nav-number">1.3.</span> <span class="nav-text">3. リポジトリにCNAMEファイルを追加する</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-Hexo%E3%81%AE%E8%A8%AD%E5%AE%9A%E3%82%92%E5%A4%89%E6%9B%B4%E3%81%99%E3%82%8B"><span class="nav-number">1.4.</span> <span class="nav-text">4. Hexoの設定を変更する</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#5-%E5%A4%89%E6%9B%B4%E3%82%92%E3%83%87%E3%83%97%E3%83%AD%E3%82%A4%E3%81%99%E3%82%8B"><span class="nav-number">1.5.</span> <span class="nav-text">5. 変更をデプロイする</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%EF%BC%94%EF%BC%90%EF%BC%94%E3%82%A8%E3%83%A9%E3%83%BC%E3%81%8C%E5%87%BA%E3%82%8B"><span class="nav-number">2.</span> <span class="nav-text">４０４エラーが出る</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E3%82%A8%E3%83%A9%E3%83%BC%E3%81%AE%E5%8E%9F%E5%9B%A0%E3%82%92%E8%AA%BF%E3%81%B9%E3%82%8B"><span class="nav-number">2.1.</span> <span class="nav-text">エラーの原因を調べる</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Github%E3%81%AEOrganaization%E3%81%A7%E3%82%AB%E3%82%B9%E3%82%BF%E3%83%A0%E3%83%89%E3%83%A1%E3%82%A4%E3%83%B3%E3%81%8C%E8%A8%AD%E5%AE%9A%E3%81%A7%E3%81%8D%E3%82%8B%E3%82%88%E3%81%86%E3%81%AB%E3%81%AA%E3%81%A3%E3%81%A6%E3%81%84%E3%82%8B%E3%80%82"><span class="nav-number">3.</span> <span class="nav-text">GithubのOrganaizationでカスタムドメインが設定できるようになっている。</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Organization%E3%81%AEVerified-domains%E3%81%AE%E8%A8%AD%E5%AE%9A%E3%82%92%E8%A1%8C%E3%81%86"><span class="nav-number">3.1.</span> <span class="nav-text">OrganizationのVerified domainsの設定を行う</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E3%81%8A%E5%90%8D%E5%89%8D-com%E3%81%A7DNS%E8%A8%AD%E5%AE%9A%E3%81%AE%E8%BF%BD%E5%8A%A0"><span class="nav-number">4.</span> <span class="nav-text">お名前.comでDNS設定の追加</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#github%E3%81%AB%E6%88%BB%E3%81%A3%E3%81%A6Varify"><span class="nav-number">5.</span> <span class="nav-text">githubに戻ってVarify</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%9B%B2%E8%A1%8C%E3%81%8D%E3%81%8C%E6%80%AA%E3%81%97%E3%81%84%E3%81%AE%E3%81%A7ClaudFlare%E3%82%92%E8%A6%8B%E3%81%AB%E3%81%84%E3%81%8F"><span class="nav-number">5.1.</span> <span class="nav-text">雲行きが怪しいのでClaudFlareを見にいく</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#HTTPS%E3%81%AE%E5%95%8F%E9%A1%8C%E3%81%8C%E5%87%BA%E3%82%8B"><span class="nav-number">6.</span> <span class="nav-text">HTTPSの問題が出る</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E3%83%87%E3%83%97%E3%83%AD%E3%82%A4%E3%81%AE%E5%95%8F%E9%A1%8C%E3%82%82%E5%87%BA%E3%81%A6%E3%81%84%E3%82%8B%E3%80%82"><span class="nav-number">7.</span> <span class="nav-text">デプロイの問題も出ている。</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#CNAME%E3%81%AE%E7%AE%A1%E7%90%86%E3%82%82%E5%A0%B4%E6%89%80%E3%81%8C%E3%81%8A%E3%81%8B%E3%81%97%E3%81%84"><span class="nav-number">8.</span> <span class="nav-text">CNAMEの管理も場所がおかしい</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 
@@ -344,7 +355,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">7</span>
+          <span class="site-state-item-count">8</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
@@ -378,7 +389,7 @@
   &copy; 
   <span itemprop="copyrightYear">2023</span>
   <span class="with-love">
-    <i class="fa fa-user"></i>
+    <i class="user"></i>
   </span>
   <span class="author" itemprop="copyrightHolder">matyos</span>
 </div>
