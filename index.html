@@ -150,65 +150,6 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="jp">
-    <link itemprop="mainEntityOfPage" href="http://www.tecmah.com/SSH%E7%A7%98%E5%AF%86%E9%8D%B5%E3%81%AE%E7%AE%A1%E7%90%86%E3%82%92%E6%A5%BD%E3%81%AB%E3%81%97%E3%81%9F%E3%81%84/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="matyos">
-      <meta itemprop="description" content="TECMAHで行った技術と経営方法の全てを紹介します。">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="TECMAH">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/SSH%E7%A7%98%E5%AF%86%E9%8D%B5%E3%81%AE%E7%AE%A1%E7%90%86%E3%82%92%E6%A5%BD%E3%81%AB%E3%81%97%E3%81%9F%E3%81%84/" class="post-title-link" itemprop="url">SSH秘密鍵の管理を楽にしたい</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">Posted on</span>
-              
-
-              <time title="Created: 2023-07-05 09:24:22 / Modified: 09:25:59" itemprop="dateCreated datePublished" datetime="2023-07-05T09:24:22+09:00">2023-07-05</time>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <p>SSH秘密鍵の管理をしようとは思ったが、どう管理したものかと<br>悩んで調べてみた。<br><a target="_blank" rel="noopener" href="https://qiita.com/suin/items/e4a976d076134f755a9a">https://qiita.com/suin/items/e4a976d076134f755a9a</a></p>
-
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="jp">
     <link itemprop="mainEntityOfPage" href="http://www.tecmah.com/Hexo%E3%81%AEgithubpage%E3%81%A7%E3%83%89%E3%83%A1%E3%82%A4%E3%83%B3%E5%A4%89%E6%9B%B4%E3%81%97%E3%81%A6%E8%A1%A8%E7%A4%BA/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -240,7 +181,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2023-07-05 09:33:03" itemprop="dateModified" datetime="2023-07-05T09:33:03+09:00">2023-07-05</time>
+                <time title="Modified: 2023-07-06 07:36:38" itemprop="dateModified" datetime="2023-07-06T07:36:38+09:00">2023-07-06</time>
               </span>
 
           
@@ -302,8 +243,18 @@
 <h1 id="HTTPSの問題が出る"><a href="#HTTPSの問題が出る" class="headerlink" title="HTTPSの問題が出る"></a>HTTPSの問題が出る</h1><p><img src="/image-13.png" alt="Alt text"></p>
 <h1 id="デプロイの問題も出ている。"><a href="#デプロイの問題も出ている。" class="headerlink" title="デプロイの問題も出ている。"></a>デプロイの問題も出ている。</h1><p>Your site was last deployed to the github-pages environment by the pages build and deployment workflow.<br>Learn more about deploying to GitHub Pages using custom workflows</p>
 <h1 id="CNAMEの管理も場所がおかしい"><a href="#CNAMEの管理も場所がおかしい" class="headerlink" title="CNAMEの管理も場所がおかしい"></a>CNAMEの管理も場所がおかしい</h1><p>Hexoでは、ビルドの際にsources内の.md以外のファイルはそのままpublicディレクトリにコピーされるので<br>これを利用して、GitHub Pagesでカスタムドメインを設定するときに必要なCNAMEファイルをsources直下に<br>追加しなければなりません。</p>
+<h1 id="小文字大文字"><a href="#小文字大文字" class="headerlink" title="小文字大文字"></a>小文字大文字</h1><p>404エラーはGitがデフォルトでは大文字・小文字を区別しないことに起因していました。<br><a target="_blank" rel="noopener" href="https://sishida21.github.io/2020/06/01/solve-page-404-error-in-hexo/">https://sishida21.github.io/2020/06/01/solve-page-404-error-in-hexo/</a></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">404</span><br><span class="line">ファイルが見つかりません</span><br><span class="line">このアドレスに設定されているサイトには、要求されたファイルが含まれていません。</span><br><span class="line">これが自分のサイトの場合は、ファイル名の大文字と小文字が URL およびファイルのアクセス許可と一致していることを確認してください。</span><br><span class="line">ルート URL ( などhttp://example.com/) の場合は、index.htmlファイルを指定する必要があります。</span><br><span class="line">GitHub Pages の使用方法の詳細については、完全なドキュメントをお読みください。</span><br></pre></td></tr></table></figure>
+
+
+
+<p>対応コマンド</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">cd .deploy_git </span><br><span class="line">git rm -rf *</span><br><span class="line">hexo deploy -g</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
 <p><a target="_blank" rel="noopener" href="https://qiita.com/simochee/items/58f04385713dd65f69f5">https://qiita.com/simochee/items/58f04385713dd65f69f5</a></p>
 <p>以上が、HexoでGitHub Pagesにカスタムドメインを設定する手順です。<br>ドメインプロバイダやDNS設定の詳細はプロバイダにより異なるため、<br>具体的な操作はプロバイダのドキュメンテーションやヘルプを参照してください。</p>
+<h1 id="git-stashに関しての記事"><a href="#git-stashに関しての記事" class="headerlink" title="git stashに関しての記事"></a>git stashに関しての記事</h1><p>git stash<br>git stash list<br>git stash apply stash@{2}<br><a target="_blank" rel="noopener" href="https://qiita.com/negi/items/291f5dc93750d3b15e0d">https://qiita.com/negi/items/291f5dc93750d3b15e0d</a></p>
+<p>git 一旦整理</p>
 
       
     </div>
@@ -346,10 +297,16 @@
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">Posted on</span>
-              
 
-              <time title="Created: 2023-07-02 10:23:32 / Modified: 10:46:17" itemprop="dateCreated datePublished" datetime="2023-07-02T10:23:32+09:00">2023-07-02</time>
+              <time title="Created: 2023-07-02 10:23:32" itemprop="dateCreated datePublished" datetime="2023-07-02T10:23:32+09:00">2023-07-02</time>
             </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2023-07-06 07:36:23" itemprop="dateModified" datetime="2023-07-06T07:36:23+09:00">2023-07-06</time>
+              </span>
 
           
 
@@ -489,10 +446,16 @@
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">Posted on</span>
-              
 
-              <time title="Created: 2023-07-01 08:33:12 / Modified: 12:01:03" itemprop="dateCreated datePublished" datetime="2023-07-01T08:33:12+09:00">2023-07-01</time>
+              <time title="Created: 2023-07-01 08:33:12" itemprop="dateCreated datePublished" datetime="2023-07-01T08:33:12+09:00">2023-07-01</time>
             </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2023-07-06 07:36:23" itemprop="dateModified" datetime="2023-07-06T07:36:23+09:00">2023-07-06</time>
+              </span>
 
           
 
@@ -567,7 +530,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2023-07-01 12:01:03" itemprop="dateModified" datetime="2023-07-01T12:01:03+09:00">2023-07-01</time>
+                <time title="Modified: 2023-07-06 07:36:23" itemprop="dateModified" datetime="2023-07-06T07:36:23+09:00">2023-07-06</time>
               </span>
 
           
@@ -638,7 +601,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2023-07-01 12:01:03" itemprop="dateModified" datetime="2023-07-01T12:01:03+09:00">2023-07-01</time>
+                <time title="Modified: 2023-07-06 07:36:23" itemprop="dateModified" datetime="2023-07-06T07:36:23+09:00">2023-07-06</time>
               </span>
 
           
@@ -720,7 +683,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2023-07-01 12:01:03" itemprop="dateModified" datetime="2023-07-01T12:01:03+09:00">2023-07-01</time>
+                <time title="Modified: 2023-07-06 07:36:23" itemprop="dateModified" datetime="2023-07-06T07:36:23+09:00">2023-07-06</time>
               </span>
 
           
@@ -791,7 +754,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2023-07-01 12:01:03" itemprop="dateModified" datetime="2023-07-01T12:01:03+09:00">2023-07-01</time>
+                <time title="Modified: 2023-07-06 07:36:23" itemprop="dateModified" datetime="2023-07-06T07:36:23+09:00">2023-07-06</time>
               </span>
 
           
@@ -893,7 +856,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">8</span>
+          <span class="site-state-item-count">7</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
