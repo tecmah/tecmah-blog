@@ -3,7 +3,7 @@
 on:
   push:
     branches: 
-      - gh-pages # gh-pagesブランチにデプロイされたされたら起動
+      - develop # developブランチにデプロイされたされたら起動
     # https://docs.github.com/ja/actions/reference/events-that-trigger-workflows
 
 jobs:
