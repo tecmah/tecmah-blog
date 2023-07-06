@@ -108,8 +108,8 @@ theme: hexo-theme-next
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
   type: git
-  repo: git@github.com:tecmah/tecmah-blog.github.io.git
-  branch: master
+  repo: git@github.com:tecmah/tecmah-blog.git
+  branch: gh-pages
   massage: deploy tecmah blog
 
 #sitemap
