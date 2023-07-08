@@ -67,7 +67,7 @@
 
   <url>
     <loc>http://www.tecmah.com/</loc>
-    <lastmod>2023-07-06</lastmod>
+    <lastmod>2023-07-08</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -75,21 +75,21 @@
   
   <url>
     <loc>http://www.tecmah.com/tags/hexo-github/</loc>
-    <lastmod>2023-07-06</lastmod>
+    <lastmod>2023-07-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>http://www.tecmah.com/tags/git-%E3%82%B3%E3%83%9E%E3%83%B3%E3%83%89-%E3%83%81%E3%83%BC%E3%83%88%E3%82%B7%E3%83%BC%E3%83%88/</loc>
-    <lastmod>2023-07-06</lastmod>
+    <lastmod>2023-07-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>http://www.tecmah.com/tags/Hexo-githubpage-%E3%83%89%E3%83%A1%E3%82%A4%E3%83%B3%E5%A4%89%E6%9B%B4/</loc>
-    <lastmod>2023-07-06</lastmod>
+    <lastmod>2023-07-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
