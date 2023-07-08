@@ -28,22 +28,22 @@
 <meta property="og:site_name" content="TECMAH">
 <meta property="og:description" content="HexoでGitHub Pagesにカスタムドメインを設定するHexoでGitHub Pagesにカスタムドメインを設定する手順になります。 1. ドメインを購入するまずはじめに、自分のウェブサイトに使用したいドメインを購入します。ドメインは、GoDaddy、Namecheap、Google Domainsなどのプロバイダから購入できます。自分が使っているのは日本のお名前.COMです。なんといって">
 <meta property="og:locale" content="ja_JP">
-<meta property="og:image" content="https://tecmah.github.io/image-4.png">
-<meta property="og:image" content="https://tecmah.github.io/image-5.png">
-<meta property="og:image" content="https://tecmah.github.io/image-6.png">
-<meta property="og:image" content="https://tecmah.github.io/image-7.png">
-<meta property="og:image" content="https://tecmah.github.io/image-8.png">
-<meta property="og:image" content="https://tecmah.github.io/image-9.png">
-<meta property="og:image" content="https://tecmah.github.io/image-10.png">
-<meta property="og:image" content="https://tecmah.github.io/image-12.png">
-<meta property="og:image" content="https://tecmah.github.io/image-11.png">
-<meta property="og:image" content="https://tecmah.github.io/image-13.png">
+<meta property="og:image" content="https://tecmah.github.io/tecmah-blog/image-4.png">
+<meta property="og:image" content="https://tecmah.github.io/tecmah-blog/image-5.png">
+<meta property="og:image" content="https://tecmah.github.io/tecmah-blog/image-6.png">
+<meta property="og:image" content="https://tecmah.github.io/tecmah-blog/image-7.png">
+<meta property="og:image" content="https://tecmah.github.io/tecmah-blog/image-8.png">
+<meta property="og:image" content="https://tecmah.github.io/tecmah-blog/image-9.png">
+<meta property="og:image" content="https://tecmah.github.io/tecmah-blog/image-10.png">
+<meta property="og:image" content="https://tecmah.github.io/tecmah-blog/image-12.png">
+<meta property="og:image" content="https://tecmah.github.io/tecmah-blog/image-11.png">
+<meta property="og:image" content="https://tecmah.github.io/tecmah-blog/image-13.png">
 <meta property="article:published_time" content="2023-07-02T01:50:42.000Z">
 <meta property="article:modified_time" content="2023-07-05T22:36:38.506Z">
 <meta property="article:author" content="matyos">
 <meta property="article:tag" content="Hexo githubpage ドメイン変更">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://tecmah.github.io/image-4.png">
+<meta name="twitter:image" content="https://tecmah.github.io/tecmah-blog/image-4.png">
 
 <link rel="canonical" href="https://tecmah.github.io/tecmah-blog/Hexo%E3%81%AEgithubpage%E3%81%A7%E3%83%89%E3%83%A1%E3%82%A4%E3%83%B3%E5%A4%89%E6%9B%B4%E3%81%97%E3%81%A6%E8%A1%A8%E7%A4%BA/">
 
@@ -230,9 +230,9 @@
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ hexo clean</span><br><span class="line">$ hexo generate</span><br><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
 
 <p>これで、新しいドメインでHexoのウェブサイトが表示されるようになります。<br>なるはずです。</p>
-<h1 id="４０４エラーが出る"><a href="#４０４エラーが出る" class="headerlink" title="４０４エラーが出る"></a>４０４エラーが出る</h1><p>** 全然ダメじゃねぇか！！！！！！！！！<br><img src="/image-4.png" alt="Alt text"></p>
+<h1 id="４０４エラーが出る"><a href="#４０４エラーが出る" class="headerlink" title="４０４エラーが出る"></a>４０４エラーが出る</h1><p>** 全然ダメじゃねぇか！！！！！！！！！<br><img src="/tecmah-blog/image-4.png" alt="Alt text"></p>
 <h2 id="エラーの原因を調べる"><a href="#エラーの原因を調べる" class="headerlink" title="エラーの原因を調べる"></a>エラーの原因を調べる</h2><p>そもそもCostomDomainの設定でDNSをチェックしてほしいと表示されている。</p>
-<p><img src="/image-5.png" alt="Alt text"><br>DNS Check in Progressは何を指しているのか<br>考えられる原因は以下のどれかかも</p>
+<p><img src="/tecmah-blog/image-5.png" alt="Alt text"><br>DNS Check in Progressは何を指しているのか<br>考えられる原因は以下のどれかかも</p>
 <ul>
 <li>AレコードやCNAMEレコードが正しく設定されていない。</li>
 <li>DNSの変更がまだ完全にプロパゲート（伝播）されていない。</li>
@@ -241,19 +241,19 @@
 <p> AレコードやCNAMEレコードが正しく設定されていないのかもしれない、<br>初期でこのページ作ったけどもう三年も前だしな・・・・</p>
 <h1 id="GithubのOrganaizationでカスタムドメインが設定できるようになっている。"><a href="#GithubのOrganaizationでカスタムドメインが設定できるようになっている。" class="headerlink" title="GithubのOrganaizationでカスタムドメインが設定できるようになっている。"></a>GithubのOrganaizationでカスタムドメインが設定できるようになっている。</h1><p><a target="_blank" rel="noopener" href="https://docs.github.com/ja/pages/configuring-a-custom-domain-for-your-github-pages-site/verifying-your-custom-domain-for-github-pages">Organizationのサイトのドメインの検証</a></p>
 <p>Organizationのオーナーは、自分のOrganizatinのカスタムドメインを検証できます。<br>GitHub.com の右上隅にあるプロファイル写真をクリックし、 [自分の Organization] をクリックします。<br>組織の隣の [設定] をクリックします。<br>サイドバーの [コード、計画、自動化] セクションで、 [ Pages] をクリックしてください。<br>右側の [ドメインの追加] をクリックします。<br>[追加するドメイン] で、確認するドメインを入力し、 [ドメインの追加] を選びます。<br>[DNS TXT レコードを追加する] の手順に従って、ドメイン ホスティング サービスで TXT レコードを作成します。<br>DNS 構成が変わるまで待ちます。 即時または最大 24 時間かかる場合があります。<br>DNS 構成が更新されたことを確認したら、ドメインを確認できます。<br>自分のドメインを確認するには、 [確認] をクリックします。</p>
-<h2 id="OrganizationのVerified-domainsの設定を行う"><a href="#OrganizationのVerified-domainsの設定を行う" class="headerlink" title="OrganizationのVerified domainsの設定を行う"></a>OrganizationのVerified domainsの設定を行う</h2><p>現状ではVerified domains無い<br><img src="/image-6.png" alt="Alt text"></p>
-<p>設定を開始してAdd dmainを行う。<br><img src="/image-7.png" alt="Alt text"></p>
-<p><img src="/image-8.png" alt="Alt text"></p>
+<h2 id="OrganizationのVerified-domainsの設定を行う"><a href="#OrganizationのVerified-domainsの設定を行う" class="headerlink" title="OrganizationのVerified domainsの設定を行う"></a>OrganizationのVerified domainsの設定を行う</h2><p>現状ではVerified domains無い<br><img src="/tecmah-blog/image-6.png" alt="Alt text"></p>
+<p>設定を開始してAdd dmainを行う。<br><img src="/tecmah-blog/image-7.png" alt="Alt text"></p>
+<p><img src="/tecmah-blog/image-8.png" alt="Alt text"></p>
 <h1 id="お名前-comでDNS設定の追加"><a href="#お名前-comでDNS設定の追加" class="headerlink" title="お名前.comでDNS設定の追加"></a>お名前.comでDNS設定の追加</h1><p>お名前.comのDNSの設定に追加、これでDNSの変更はいいはず？</p>
-<p><img src="/image-9.png" alt="Alt text"></p>
-<h1 id="githubに戻ってVarify"><a href="#githubに戻ってVarify" class="headerlink" title="githubに戻ってVarify"></a>githubに戻ってVarify</h1><p>設定を追加して変更・・・・したが２４時間変更にかかる場合があるとのこと<br>こればっかりは待つしかない。<br><img src="/image-10.png" alt="Alt text"></p>
+<p><img src="/tecmah-blog/image-9.png" alt="Alt text"></p>
+<h1 id="githubに戻ってVarify"><a href="#githubに戻ってVarify" class="headerlink" title="githubに戻ってVarify"></a>githubに戻ってVarify</h1><p>設定を追加して変更・・・・したが２４時間変更にかかる場合があるとのこと<br>こればっかりは待つしかない。<br><img src="/tecmah-blog/image-10.png" alt="Alt text"></p>
 <h2 id="雲行きが怪しいのでClaudFlareを見にいく"><a href="#雲行きが怪しいのでClaudFlareを見にいく" class="headerlink" title="雲行きが怪しいのでClaudFlareを見にいく"></a>雲行きが怪しいのでClaudFlareを見にいく</h2><p>いくら待っても全然通らない、流石におかしいぞ・・・・<br><a target="_blank" rel="noopener" href="https://www.cloudflare.com/">cloudflare</a><br>で以前設定を行なっていたか、確認。</p>
 <ul>
-<li>なんかありますねぇ！!!!!!!!<br><img src="/image-12.png" alt="Alt text"></li>
+<li>なんかありますねぇ！!!!!!!!<br><img src="/tecmah-blog/image-12.png" alt="Alt text"></li>
 </ul>
 <p>DNSの設定をcloudflareで行ったらいけました。</p>
-<p><img src="/image-11.png" alt="Alt text"></p>
-<h1 id="HTTPSの問題が出る"><a href="#HTTPSの問題が出る" class="headerlink" title="HTTPSの問題が出る"></a>HTTPSの問題が出る</h1><p><img src="/image-13.png" alt="Alt text"></p>
+<p><img src="/tecmah-blog/image-11.png" alt="Alt text"></p>
+<h1 id="HTTPSの問題が出る"><a href="#HTTPSの問題が出る" class="headerlink" title="HTTPSの問題が出る"></a>HTTPSの問題が出る</h1><p><img src="/tecmah-blog/image-13.png" alt="Alt text"></p>
 <h1 id="デプロイの問題も出ている。"><a href="#デプロイの問題も出ている。" class="headerlink" title="デプロイの問題も出ている。"></a>デプロイの問題も出ている。</h1><p>Your site was last deployed to the github-pages environment by the pages build and deployment workflow.<br>Learn more about deploying to GitHub Pages using custom workflows</p>
 <h1 id="CNAMEの管理も場所がおかしい"><a href="#CNAMEの管理も場所がおかしい" class="headerlink" title="CNAMEの管理も場所がおかしい"></a>CNAMEの管理も場所がおかしい</h1><p>Hexoでは、ビルドの際にsources内の.md以外のファイルはそのままpublicディレクトリにコピーされるので<br>これを利用して、GitHub Pagesでカスタムドメインを設定するときに必要なCNAMEファイルをsources直下に<br>追加しなければなりません。</p>
 <h1 id="小文字大文字"><a href="#小文字大文字" class="headerlink" title="小文字大文字"></a>小文字大文字</h1><p>404エラーはGitがデフォルトでは大文字・小文字を区別しないことに起因していました。<br><a target="_blank" rel="noopener" href="https://sishida21.github.io/2020/06/01/solve-page-404-error-in-hexo/">https://sishida21.github.io/2020/06/01/solve-page-404-error-in-hexo/</a></p>
